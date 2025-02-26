@@ -1,14 +1,15 @@
 **Этот проект реализует самобалансирующееся AVL-дерево на TypeScript, используя утилитарные типы (MyReadonly), которые обеспечивают иммутабельность узлов дерева.**
 
 Файлы проекта
-1. utilityTypes.ts
+***1. utilityTypes.ts***
 Этот файл содержит утилитарные типы (Utility Types), которые помогают работать с типами в TypeScript.
 
 MyReadonly<T> — делает все свойства объекта T только для чтения.
 MyPartial<T> — делает все свойства объекта T необязательными.
 MyNonNullable<T> — убирает null и undefined из типа.
 StringKeys<T> — возвращает ключи объекта T, значения которых являются строками.
-2. avlTree.ts
+
+***2. avlTree.ts***
 Основной файл с реализацией AVL-дерева.
 
 Класс Node<T> (узел дерева)
@@ -61,6 +62,6 @@ search(node: MyReadonly<Node<T>> | null, value: T): MyReadonly<Node<T>> | null
 find(value: T): MyReadonly<Node<T>> | null
 
 Внешний метод для поиска (обёртка над search).
-3. index.ts
+***3. index.ts***
 Этот файл использует AVLTree для создания дерева и выполнения операций.
 
