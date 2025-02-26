@@ -60,8 +60,8 @@ search(node: MyReadonly<Node<T>> | null, value: T): MyReadonly<Node<T>> | null
 Поиск элемента в дереве.
 Рекурсивно идёт влево/вправо, пока не найдёт нужное значение.
 find(value: T): MyReadonly<Node<T>> | null
-
 Внешний метод для поиска (обёртка над search).
+
 ***3. index.ts***
 Этот файл использует AVLTree для создания дерева и выполнения операций.
 
